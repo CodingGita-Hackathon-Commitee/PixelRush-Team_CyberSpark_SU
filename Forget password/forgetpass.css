@@ -1,0 +1,408 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f8e8e8;
+
+    color: #29251f;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/* =========================================
+   MAIN PAGE
+========================================= */
+
+.page {
+    width: 100vw;
+    height: 100vh;
+
+    /* max-width: 1100px;
+
+    min-height: 585px; */
+
+    margin: 10px  auto;
+
+    background: #fffaf0;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    height: 43px;
+
+    padding: 0 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+    gap: 1000px;
+
+    background: #fffaf0;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #39342b;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.brand-icon {
+    width: 18px;
+    height: 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #d98400;
+
+    color: white;
+
+    border-radius: 5px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   HELP
+========================================= */
+
+.help {
+    color: #5f594f;
+
+    font-size: 9px;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.main-content {
+    min-height: 542px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    padding-top: 30px;
+}
+
+
+/* =========================================
+   FORGOT PASSWORD CARD
+========================================= */
+
+.forgot-card {
+    width: 280px;
+
+    min-height: 245px;
+
+    padding: 18px 19px;
+
+    background: #fffdf7;
+
+    border: 1px solid #e4ded1;
+
+    border-radius: 11px;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================================
+   KEY ICON
+========================================= */
+
+.key-icon {
+    color: #dd8b00;
+
+    font-size: 17px;
+
+    height: 25px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* =========================================
+   ACCOUNT LABEL
+========================================= */
+
+.account-label {
+    text-align: center;
+
+    color: #d88b00;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-top: 4px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.forgot-card h1 {
+    text-align: center;
+
+    color: #29251f;
+
+    font-size: 15px;
+
+    line-height: 1.2;
+
+    margin-bottom: 7px;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.description {
+    text-align: center;
+
+    color: #8a8378;
+
+    font-size: 7px;
+
+    line-height: 1.4;
+
+    margin-bottom: 14px;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.input-group {
+    margin-bottom: 9px;
+}
+
+.input-group label {
+    display: block;
+
+    color: #514a40;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    margin-bottom: 4px;
+}
+
+.input-group input {
+    width: 100%;
+
+    height: 24px;
+
+    padding: 0 8px;
+
+    background: #fffdf8;
+
+    border: 1px solid #e2d9ca;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    color: #423c33;
+
+    font-size: 7px;
+}
+
+.input-group input::placeholder {
+    color: #999185;
+}
+
+.input-group input:focus {
+    border-color: #d98b00;
+
+    box-shadow:
+        0 0 0 2px rgba(217, 139, 0, .08);
+}
+
+
+/* =========================================
+   RESET BUTTON
+========================================= */
+
+.reset-btn {
+    width: 100%;
+
+    height: 23px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #d98000;
+
+    color: #ffffff;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all .2s ease;
+}
+
+.reset-btn:hover {
+    background: #c87500;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   EXPIRY TEXT
+========================================= */
+
+.expiry {
+    text-align: center;
+
+    color: #948c81;
+
+    font-size: 7px;
+
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   BACK TO LOGIN
+========================================= */
+
+.back-login {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 5px;
+
+    margin-top: 15px;
+
+    color: #6f685d;
+
+    font-size: 7px;
+
+    font-weight: 500;
+}
+
+.back-login span {
+    font-size: 10px;
+}
+
+.back-login:hover {
+    color: #d98100;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .page-title {
+        left: 20px;
+        top: 25px;
+    }
+
+    .page {
+        width: calc(100% - 30px);
+
+        margin-top: 55px;
+    }
+
+    .main-content {
+        padding: 25px 15px;
+
+        min-height: 500px;
+    }
+
+    .forgot-card {
+        width: 100%;
+
+        max-width: 300px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .header {
+        padding: 0 15px;
+    }
+
+    .brand {
+        font-size: 11px;
+    }
+
+    .forgot-card {
+        padding: 17px;
+    }
+}
