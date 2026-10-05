@@ -1,0 +1,657 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f8e8e8;
+
+    color: #243044;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ========================================
+   WEBSITE
+======================================== */
+
+.website {
+    width: 100vw;
+    height: 1000px;
+    background: #fffaf0;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    height: 53px;
+    padding: 0 22px;
+    display: flex;
+    align-items: center;
+    background: #fffefa;
+    border-bottom: 1px solid #e6dfd2;
+    position: sticky;
+    top: 0;
+}
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+    width: 86px;
+
+    color: #e42129;
+
+    font-size: 16px;
+    font-weight: 900;
+    font-style: italic;
+
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: #df262b;
+}
+
+.logo b {
+    color: #e0272b;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+nav {
+    display: flex;
+    align-items: center;
+
+    gap: 28px;
+}
+
+nav a {
+    font-size: 9px;
+    color: #38434c;
+}
+
+nav a:hover {
+    color: #d98200;
+}
+
+
+/* =========================================
+   NAV RIGHT
+========================================= */
+
+.nav-right {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.search {
+    color: #52606c;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+.profile-circle {
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #dc8b00;
+
+    color: #202020;
+
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.name {
+    color: #3d444a;
+
+    font-size: 9px;
+}
+
+
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.content {
+    padding: 15px 18px 20px;
+}
+
+
+/* ========================================
+   HEADING
+======================================== */
+
+.heading {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    margin-bottom: 11px;
+}
+
+.heading h1 {
+    font-size: 14px;
+
+    color: #1d2939;
+
+    margin-bottom: 3px;
+}
+
+.heading p {
+    color: #7b8592;
+
+    font-size: 6.5px;
+}
+
+.recommended {
+    margin-top: 12px;
+
+    padding: 5px 8px;
+
+    border-radius: 10px;
+
+    background: #def4e3;
+
+    color: #2a9761;
+
+    font-size: 6px;
+
+    font-weight: 600;
+}
+
+
+/* ========================================
+   PLAN CARDS
+======================================== */
+
+.plans {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 9px;
+}
+
+
+/* ========================================
+   CARD
+======================================== */
+
+.plan-card {
+    position: relative;
+
+    background: #ffffff;
+
+    border: 1px solid #dce3e9;
+
+    border-radius: 8px;
+
+    padding: 7px;
+
+    height: 400px;
+    width: 400px;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, .03);
+}
+
+
+/* Selected Standard */
+
+.plan-card.selected {
+    border: 2px solid #eba000;
+
+    padding: 6px;
+}
+
+
+/* Selected label */
+
+.selected-label {
+    position: absolute;
+
+    top: 7px;
+    right: 7px;
+
+    z-index: 2;
+
+    padding: 3px 5px;
+
+    background: #e9a000;
+
+    color: #ffffff;
+
+    border-radius: 3px;
+
+    font-size: 5px;
+
+    font-weight: 700;
+}
+
+
+/* ========================================
+   FOOD IMAGE
+======================================== */
+
+.food-image {
+    width: 100%;
+
+    height: 65px;
+
+    overflow: hidden;
+
+    margin-bottom: 6px;
+}
+
+.food-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ========================================
+   CARD TITLE
+======================================== */
+
+.plan-card h2 {
+    color: #344052;
+
+    font-size: 8px;
+
+    margin-bottom: 3px;
+}
+
+.price {
+    color: #263548;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    margin-bottom: 6px;
+}
+
+
+/* ========================================
+   MEAL COUNT
+======================================== */
+
+.meal-count {
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #788492;
+
+    font-size: 5.5px;
+
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid #e7eaed;
+}
+
+.meal-count strong {
+    color: #3c4757;
+
+    font-size: 5.5px;
+}
+
+
+/* ========================================
+   DURATION
+======================================== */
+
+.duration {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 5px 0;
+
+    border-bottom: 1px solid #e7eaed;
+
+    font-size: 5.5px;
+}
+
+.duration span {
+    color: #778391;
+}
+
+.duration strong {
+    color: #3b4655;
+}
+
+
+/* ========================================
+   FEATURES
+======================================== */
+
+.features {
+    list-style: none;
+
+    padding: 5px 0;
+
+    border-bottom: 1px solid #e7eaed;
+}
+
+.features li {
+    color: #718091;
+
+    font-size: 5.5px;
+
+    margin-bottom: 4px;
+
+    padding-left: 8px;
+
+    position: relative;
+}
+
+.features li:last-child {
+    margin-bottom: 0;
+}
+
+.features li::before {
+    content: "•";
+
+    position: absolute;
+
+    left: 0;
+
+    color: #6b7a89;
+}
+
+
+/* ========================================
+   INCLUDES
+======================================== */
+
+.plan-card h3 {
+    color: #465365;
+
+    font-size: 5.5px;
+
+    margin: 6px 0 5px;
+}
+
+
+/* ========================================
+   MEAL LIST
+======================================== */
+
+.meal-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.meal-list div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+}
+
+.meal-list img {
+    width: 19px;
+    height: 19px;
+
+    border-radius: 5px;
+
+    object-fit: cover;
+}
+
+.meal-list span {
+    color: #4d5968;
+
+    font-size: 5.5px;
+}
+
+
+/* ========================================
+   CUSTOMIZE BUTTON
+======================================== */
+
+.customize {
+    position: absolute;
+
+    left: 7px;
+    right: 7px;
+
+    bottom: 7px;
+
+    width: calc(100% - 14px);
+
+    height: 16px;
+
+    background: #fffaf0;
+
+    border: 1px solid #e5dfd2;
+
+    border-radius: 4px;
+
+    color: #5a6370;
+
+    font-size: 5.5px;
+
+    cursor: pointer;
+}
+
+.selected .customize {
+    left: 6px;
+    right: 6px;
+
+    width: calc(100% - 12px);
+}
+
+.active-button {
+    background: #e8a000;
+
+    border-color: #e8a000;
+
+    color: #ffffff;
+
+    font-weight: 600;
+}
+
+
+/* ========================================
+   COMPARISON
+======================================== */
+
+.comparison {
+    margin-top: 13px;
+}
+
+.comparison-heading {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    margin-bottom: 6px;
+}
+
+.comparison-heading h2 {
+    color: #344052;
+
+    font-size: 8px;
+
+    margin-bottom: 2px;
+}
+
+.comparison-heading p {
+    color: #818b97;
+
+    font-size: 5.5px;
+}
+
+.selected-badge {
+    background: #e8f0fa;
+
+    color: #587494;
+
+    padding: 3px 6px;
+
+    border-radius: 6px;
+
+    font-size: 5px;
+}
+
+
+/* ========================================
+   TABLE
+======================================== */
+
+.table-wrapper {
+    overflow: hidden;
+
+    border: 1px solid #d9e0e7;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+}
+
+thead {
+    background: #e1efff;
+}
+
+th {
+    height: 22px;
+
+    padding: 4px 7px;
+
+    color: #536477;
+
+    font-size: 5.5px;
+
+    font-weight: 600;
+
+    text-align: left;
+}
+
+td {
+    height: 21px;
+
+    padding: 4px 7px;
+
+    color: #4d5969;
+
+    font-size: 5.5px;
+
+    border-top: 1px solid #e1e6eb;
+}
+
+th:first-child,
+td:first-child {
+    width: 24%;
+}
+
+th:not(:first-child),
+td:not(:first-child) {
+    width: 25.33%;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 750px) {
+
+    .website {
+        width: calc(100% - 30px);
+    }
+
+    .plans {
+        grid-template-columns: 1fr;
+    }
+
+    .plan-card {
+        min-height: 330px;
+    }
+
+    .recommended {
+        display: none;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .page-title {
+        top: 20px;
+        left: 15px;
+
+        font-size: 11px;
+    }
+
+    .website {
+        margin-top: 48px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .content {
+        padding: 12px;
+    }
+
+    .heading h1 {
+        font-size: 13px;
+    }
+
+    .table-wrapper {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 500px;
+    }
+}
