@@ -1,0 +1,1126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html,
+body {
+width: 100%;
+min-height: 100%;
+}
+
+body {
+min-height: 100vh;
+font-family: Arial, Helvetica, sans-serif;
+background: #f9e9e9;
+color: #1d2c38;
+}
+
+button,
+input {
+font-family: inherit;
+}
+
+button {
+cursor: pointer;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+/* ================================
+PAGE LABEL
+================================ */
+
+.page-label {
+position: absolute;
+top: 18px;
+left: 40px;
+
+
+color: #a79f9f;
+font-size: 13px;
+
+
+}
+
+/* ================================
+FULL SCREEN PAGE
+================================ */
+
+.page {
+width: 100%;
+min-height: 100vh;
+
+
+margin: 0;
+
+background: #fffaf0;
+
+
+}
+
+/* ================================
+NAVBAR
+================================ */
+
+.navbar {
+width: 100%;
+height: 70px;
+
+
+padding: 0 40px;
+
+display: flex;
+align-items: center;
+
+background: #fffefa;
+
+border-bottom: 1px solid #e4ded2;
+
+
+}
+
+/* ================================
+LOGO
+================================ */
+
+.brand {
+width: 120px;
+
+
+display: flex;
+align-items: center;
+
+
+}
+
+.brand img {
+width: 60px;
+height: 42px;
+
+
+object-fit: cover;
+
+
+}
+
+/* ================================
+NAVIGATION
+================================ */
+
+.navigation {
+display: flex;
+align-items: center;
+
+
+gap: 45px;
+
+
+}
+
+.navigation a {
+color: #34414a;
+font-size: 13px;
+}
+
+.navigation a:hover {
+color: #db8900;
+}
+
+/* ================================
+RIGHT NAVIGATION
+================================ */
+
+.nav-actions {
+margin-left: auto;
+
+
+display: flex;
+align-items: center;
+
+gap: 22px;
+
+
+}
+
+.search-icon {
+color: #485761;
+font-size: 20px;
+}
+
+.bell {
+color: #000000;
+font-size: 17px;
+
+
+filter: grayscale(1);
+
+
+}
+
+.avatar {
+width: 30px;
+height: 30px;
+
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+border-radius: 50%;
+
+background: #dd8b00;
+
+color: #17212a;
+
+font-size: 12px;
+font-weight: 700;
+
+
+}
+
+.username {
+color: #404b53;
+font-size: 12px;
+}
+
+/* ================================
+CONTENT
+================================ */
+
+.content {
+width: 100%;
+
+
+padding: 35px 40px 45px;
+
+
+}
+
+/* ================================
+PAGE HEADING
+================================ */
+
+.page-heading {
+width: 100%;
+
+
+padding-bottom: 20px;
+
+border-bottom: 1px solid #e5ddd0;
+
+
+}
+
+.eyebrow {
+margin-bottom: 8px;
+
+
+color: #d68400;
+
+font-size: 11px;
+font-weight: 700;
+
+letter-spacing: 1.6px;
+
+
+}
+
+.page-heading h1 {
+color: #192b38;
+font-size: 25px;
+}
+
+/* ================================
+SUMMARY
+================================ */
+
+.summary-card {
+width: 100%;
+
+
+min-height: 75px;
+
+margin-top: 18px;
+
+padding: 12px 20px;
+
+display: grid;
+
+grid-template-columns: repeat(4, 1fr);
+
+align-items: center;
+
+background: #fffefa;
+
+border: 1px solid #e3dacc;
+
+border-radius: 12px;
+
+
+}
+
+.summary-item {
+min-height: 45px;
+
+
+padding-left: 20px;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+border-left: 1px solid #e4ddd1;
+
+
+}
+
+.summary-item:first-child {
+border-left: none;
+padding-left: 0;
+}
+
+.summary-item span {
+margin-bottom: 6px;
+
+
+color: #727d84;
+
+font-size: 10px;
+
+
+}
+
+.summary-item strong {
+color: #293842;
+
+
+font-size: 13px;
+
+
+}
+
+.summary-item .orange {
+color: #dd8900;
+}
+
+/* ================================
+CHECKOUT
+================================ */
+
+.checkout-layout {
+width: 100%;
+
+
+margin-top: 22px;
+
+display: grid;
+
+grid-template-columns: minmax(0, 2fr) minmax(320px, 1fr);
+
+gap: 25px;
+
+align-items: start;
+
+
+}
+
+/* ================================
+REVIEW
+================================ */
+
+.review-heading {
+margin-bottom: 13px;
+}
+
+.review-heading h2 {
+margin-bottom: 5px;
+
+
+color: #293842;
+
+font-size: 16px;
+
+
+}
+
+.review-heading p {
+color: #69757c;
+
+
+font-size: 11px;
+
+
+}
+
+/* ================================
+PLAN CARD
+================================ */
+
+.plan-card {
+width: 100%;
+
+
+min-height: 190px;
+
+padding: 16px;
+
+display: flex;
+
+gap: 18px;
+
+background: #fffefa;
+
+border: 1px solid #e1d8ca;
+
+border-radius: 14px;
+
+box-shadow: 0 1px 2px rgba(35, 29, 20, 0.05);
+
+
+}
+
+/* ================================
+MEAL IMAGE
+================================ */
+
+.meal-photo {
+width: 160px;
+min-width: 160px;
+
+
+height: 158px;
+
+overflow: hidden;
+
+border-radius: 10px;
+
+
+}
+
+.meal-photo img {
+width: 100%;
+height: 100%;
+
+
+display: block;
+
+object-fit: cover;
+
+
+}
+
+/* ================================
+PLAN INFO
+================================ */
+
+.plan-info {
+flex: 1;
+min-width: 0;
+}
+
+.plan-header {
+display: flex;
+
+
+align-items: flex-start;
+justify-content: space-between;
+
+padding-bottom: 13px;
+
+border-bottom: 1px solid #e7dfd2;
+
+
+}
+
+.plan-header h3 {
+margin-bottom: 6px;
+
+
+color: #293a45;
+
+font-size: 18px;
+
+
+}
+
+.plan-header p {
+max-width: 500px;
+
+
+color: #69757c;
+
+font-size: 11px;
+
+line-height: 1.5;
+
+
+}
+
+.selected {
+flex-shrink: 0;
+
+
+margin-left: 15px;
+
+padding: 5px 10px;
+
+border-radius: 12px;
+
+background: #dff2d9;
+
+color: #438049;
+
+font-size: 10px;
+
+font-weight: 700;
+
+
+}
+
+/* ================================
+PLAN META
+================================ */
+
+.plan-meta {
+padding-top: 13px;
+
+
+display: grid;
+
+grid-template-columns: 1fr 1fr;
+
+row-gap: 13px;
+
+
+}
+
+.plan-meta label {
+display: block;
+
+
+margin-bottom: 5px;
+
+color: #77828a;
+
+font-size: 9px;
+
+
+}
+
+.plan-meta strong {
+color: #35434d;
+
+
+font-size: 12px;
+
+
+}
+
+/* ================================
+DELIVERY CARD
+================================ */
+
+.delivery-card {
+width: 100%;
+
+
+margin-top: 20px;
+
+padding: 20px;
+
+background: #fffefa;
+
+border: 1px solid #e1d8ca;
+
+border-radius: 14px;
+
+box-shadow: 0 1px 2px rgba(35, 29, 20, 0.04);
+
+
+}
+
+.delivery-card h2 {
+margin-bottom: 6px;
+
+
+color: #293842;
+
+font-size: 16px;
+
+
+}
+
+.delivery-subtitle {
+margin-bottom: 16px;
+
+
+color: #6b767d;
+
+font-size: 11px;
+
+
+}
+
+/* ================================
+FORM
+================================ */
+
+.input-row {
+display: grid;
+
+
+grid-template-columns: 1fr 1fr;
+
+gap: 15px;
+
+
+}
+
+.input-group {
+width: 100%;
+
+
+margin-bottom: 14px;
+
+
+}
+
+.input-group label {
+display: block;
+
+
+margin-bottom: 6px;
+
+color: #35434c;
+
+font-size: 10px;
+
+
+}
+
+.input-group input {
+width: 100%;
+
+
+height: 40px;
+
+padding: 0 12px;
+
+outline: none;
+
+border: 1px solid #dfd6ca;
+
+border-radius: 7px;
+
+background: #fffefa;
+
+color: #44515a;
+
+font-size: 11px;
+
+
+}
+
+.input-group input:focus {
+border-color: #d98a00;
+}
+
+/* ================================
+PAYMENT CARD
+================================ */
+
+.payment-card {
+width: 100%;
+
+
+padding: 22px;
+
+background: #fffefa;
+
+border: 1px solid #ded5c7;
+
+border-radius: 15px;
+
+box-shadow: 0 1px 2px rgba(35, 29, 20, 0.05);
+
+
+}
+
+.payment-card h2 {
+margin-bottom: 6px;
+
+
+color: #293842;
+
+font-size: 19px;
+
+
+}
+
+.payment-description {
+margin-bottom: 17px;
+
+
+color: #6d777e;
+
+font-size: 11px;
+
+
+}
+
+/* ================================
+PAYMENT METHODS
+================================ */
+
+.payment-methods {
+width: 100%;
+height: 40px;
+
+
+display: grid;
+
+grid-template-columns: repeat(3, 1fr);
+
+overflow: hidden;
+
+border-radius: 8px;
+
+background: #f2ecdf;
+
+
+}
+
+.payment-methods button {
+border: none;
+
+
+background: transparent;
+
+color: #4a565e;
+
+font-size: 10px;
+
+
+}
+
+.payment-methods .payment-active {
+margin: 1px;
+
+
+border: 1px solid #ddd4c8;
+
+border-radius: 7px;
+
+background: #fffefa;
+
+color: #34424b;
+
+
+}
+
+/* ================================
+UPI
+================================ */
+
+.upi-section {
+margin-top: 18px;
+}
+
+.upi-section label {
+display: block;
+
+
+margin-bottom: 6px;
+
+color: #3b4851;
+
+font-size: 10px;
+
+
+}
+
+.upi-section input {
+width: 100%;
+
+
+height: 40px;
+
+padding: 0 12px;
+
+outline: none;
+
+border: 1px solid #ded6ca;
+
+border-radius: 7px;
+
+background: #fffefa;
+
+color: #43515a;
+
+font-size: 11px;
+
+
+}
+
+.upi-section p {
+margin-top: 7px;
+
+
+color: #7a8388;
+
+font-size: 9px;
+
+line-height: 1.4;
+
+
+}
+
+/* ================================
+LINE
+================================ */
+
+.payment-line {
+width: 100%;
+
+
+height: 1px;
+
+margin: 18px 0;
+
+background: #e6ded2;
+
+
+}
+
+/* ================================
+AMOUNT
+================================ */
+
+.amount-row,
+.total-row {
+display: flex;
+
+
+align-items: center;
+justify-content: space-between;
+
+
+}
+
+.amount-row {
+margin-bottom: 13px;
+}
+
+.amount-row span {
+color: #657179;
+
+
+font-size: 11px;
+
+
+}
+
+.amount-row strong {
+color: #34434c;
+
+
+font-size: 13px;
+
+
+}
+
+.total-row span {
+color: #2c3b45;
+
+
+font-size: 13px;
+
+font-weight: 700;
+
+
+}
+
+.total-row strong {
+color: #293a44;
+
+
+font-size: 20px;
+
+
+}
+
+/* ================================
+SECURITY
+================================ */
+
+.secure-box {
+min-height: 58px;
+
+
+margin-top: 16px;
+
+padding: 11px;
+
+display: flex;
+
+align-items: flex-start;
+
+gap: 9px;
+
+border-radius: 9px;
+
+background: #dff3da;
+
+
+}
+
+.secure-icon {
+color: #4c8753;
+
+
+font-size: 15px;
+
+
+}
+
+.secure-box p {
+color: #4d7952;
+
+
+font-size: 10px;
+
+line-height: 1.45;
+
+
+}
+
+/* ================================
+PAY BUTTON
+================================ */
+
+.pay-btn {
+width: 100%;
+
+
+height: 45px;
+
+margin-top: 17px;
+
+border: none;
+
+border-radius: 7px;
+
+background: #e49a00;
+
+color: #161f24;
+
+font-size: 12px;
+
+font-weight: 700;
+
+
+}
+
+.pay-btn:hover {
+background: #d88d00;
+}
+
+.pay-btn span {
+margin-left: 7px;
+
+
+font-size: 16px;
+
+
+}
+
+/* ================================
+TERMS
+================================ */
+
+.terms {
+margin-top: 10px;
+
+
+text-align: center;
+
+color: #737b80;
+
+font-size: 9px;
+
+
+}
+
+/* ================================
+HELP
+================================ */
+
+.help-bar {
+width: 100%;
+
+
+height: 42px;
+
+margin-top: 30px;
+
+display: flex;
+
+align-items: center;
+justify-content: center;
+
+border-radius: 7px;
+
+background: #f3e5f4;
+
+color: #646970;
+
+font-size: 10px;
+
+
+}
+
+.help-bar span {
+margin-right: 5px;
+}
+
+/* ================================
+TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+
+.navbar {
+    padding: 0 20px;
+}
+
+.content {
+    padding: 30px 20px;
+}
+
+.navigation {
+    gap: 20px;
+}
+
+.nav-actions {
+    gap: 15px;
+}
+
+.checkout-layout {
+    grid-template-columns: 1fr;
+}
+
+.payment-card {
+    width: 100%;
+}
+
+
+}
+
+/* ================================
+MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+
+.page-label {
+    position: static;
+
+    padding: 15px 15px 0;
+
+    font-size: 11px;
+}
+
+.navbar {
+    height: 60px;
+
+    padding: 0 15px;
+}
+
+.brand {
+    width: auto;
+}
+
+.navigation {
+    display: none;
+}
+
+.nav-actions {
+    gap: 12px;
+}
+
+.username {
+    display: none;
+}
+
+.content {
+    padding: 25px 15px;
+}
+
+.summary-card {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    padding: 15px;
+}
+
+.summary-item {
+    border-left: none;
+
+    padding-left: 0;
+}
+
+.checkout-layout {
+    grid-template-columns: 1fr;
+}
+
+.plan-card {
+    flex-direction: column;
+}
+
+.meal-photo {
+    width: 100%;
+    min-width: 100%;
+
+    height: 200px;
+}
+
+.input-row {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+}
+
+
+}
+
+/* ================================
+SMALL MOBILE
+================================ */
+
+@media (max-width: 400px) {
+
+
+.summary-card {
+    grid-template-columns: 1fr;
+}
+
+.summary-item {
+    padding-left: 0;
+
+    border-left: none;
+}
+
+.plan-meta {
+    grid-template-columns: 1fr;
+}
+
+
+}
