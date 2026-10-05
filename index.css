@@ -1,0 +1,728 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8e9e9;
+    color: #172633;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+
+/* =========================================
+   APP
+========================================= */
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    /* max-width: 1100px; */
+    /* min-height: 780px; */
+    background: #fffaf0;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    height: 53px;
+    padding: 0 22px;
+    display: flex;
+    align-items: center;
+    background: #fffefa;
+    border-bottom: 1px solid #e6dfd2;
+    position: sticky;
+    top: 0;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+    width: 86px;
+
+    color: #e42129;
+
+    font-size: 16px;
+    font-weight: 900;
+    font-style: italic;
+
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: #df262b;
+}
+
+.logo b {
+    color: #e0272b;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+nav {
+    display: flex;
+    align-items: center;
+
+    gap: 28px;
+}
+
+nav a {
+    font-size: 9px;
+    color: #38434c;
+}
+
+nav a:hover {
+    color: #d98200;
+}
+
+
+/* =========================================
+   NAV RIGHT
+========================================= */
+
+.nav-right {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.search,
+.bell {
+    color: #52606c;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+.profile-circle {
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #dc8b00;
+
+    color: #202020;
+
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.name {
+    color: #3d444a;
+
+    font-size: 9px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.content {
+    padding: 22px;
+}
+
+
+/* =========================================
+   GREETING
+========================================= */
+
+.greeting {
+    margin-bottom: 20px;
+}
+
+.date {
+    color: #d98500;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+
+    margin-bottom: 12px;
+}
+
+.greeting h1 {
+    color: #142432;
+
+    font-size: 23px;
+
+    line-height: 1;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   DELIVERY CARD
+========================================= */
+
+.delivery {
+    width: 100%;
+    height: 190px;
+
+    display: flex;
+
+    overflow: hidden;
+
+    border: 1px solid #e1d8c9;
+
+    border-radius: 15px;
+
+    background: #fff9ed;
+}
+
+
+/* =========================================
+   DELIVERY INFO
+========================================= */
+
+.delivery-info {
+    flex: 1;
+
+    padding: 21px;
+}
+
+.delivery-tag {
+    display: inline-block;
+
+    padding: 5px 9px;
+
+    border-radius: 20px;
+
+    background: #f7e8c7;
+
+    color: #dc8900;
+
+    font-size: 7px;
+    font-weight: 700;
+}
+
+.delivery h2 {
+    margin-top: 12px;
+
+    color: #182936;
+
+    font-size: 22px;
+
+    line-height: 1.18;
+}
+
+.arrival {
+    margin-top: 9px;
+
+    color: #596771;
+
+    font-size: 9px;
+}
+
+.clock {
+    color: #e08b00;
+
+    font-size: 15px;
+
+    margin-right: 3px;
+}
+
+.fresh {
+    display: inline-block;
+
+    margin-top: 14px;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    background: #def2d8;
+
+    color: #34713b;
+
+    font-size: 8px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   FOOD IMAGE
+========================================= */
+
+.food-image {
+    width: 25%;
+
+    min-width: 230px;
+}
+
+.food-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   SUBSCRIPTION
+========================================= */
+
+.subscription {
+    height: 151px;
+
+    margin-top: 20px;
+
+    padding: 18px;
+
+    border-radius: 14px;
+
+    background: #101e2d;
+
+    color: white;
+}
+
+.subscription-header {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.subscription-header p {
+    color: #a7b0b9;
+
+    font-size: 8px;
+
+    margin-bottom: 7px;
+}
+
+.subscription-header h3 {
+    color: #f5f1e9;
+
+    font-size: 13px;
+}
+
+.used {
+    padding: 4px 8px;
+
+    border-radius: 15px;
+
+    background: #394754;
+
+    color: #c8ced4;
+
+    font-size: 7px;
+}
+
+
+/* =========================================
+   MEALS LEFT
+========================================= */
+
+.meals-left {
+    margin-top: 15px;
+
+    color: #f7f1e7;
+
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   PROGRESS
+========================================= */
+
+.progress-container {
+    width: 79%;
+
+    height: 5px;
+
+    margin-top: 7px;
+
+    border-radius: 10px;
+
+    background: #3b4855;
+
+    overflow: hidden;
+}
+
+.progress {
+    width: 72%;
+    height: 100%;
+
+    border-radius: 10px;
+
+    background: #e28c00;
+}
+
+
+/* =========================================
+   SUBSCRIPTION FOOTER
+========================================= */
+
+.subscription-footer {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 7px;
+}
+
+.subscription-footer > span {
+    color: #909ba4;
+
+    font-size: 8px;
+}
+
+.subscription-actions {
+    display: flex;
+
+    gap: 8px;
+}
+
+.subscription-actions button {
+    height: 26px;
+
+    padding: 0 12px;
+
+    border-radius: 8px;
+
+    font-size: 8px;
+
+    cursor: pointer;
+}
+
+.skip {
+    border: 1px solid #929ca5;
+
+    background: transparent;
+
+    color: #f4f2ed;
+}
+
+.manage {
+    border: 1px solid #dc8a00;
+
+    background: #e29400;
+
+    color: #17222c;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   QUICK ACTIONS
+========================================= */
+
+.quick {
+    margin-top: 22px;
+}
+
+.quick h2 {
+    margin-bottom: 11px;
+
+    color: #1c2a36;
+
+    font-size: 13px;
+}
+
+.quick-cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 230px);
+
+    gap: 10px;
+}
+
+.quick-card {
+    height: 58px;
+
+    padding: 11px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    background: #fffdf8;
+
+    border: 1px solid #e2d9cb;
+
+    border-radius: 11px;
+}
+
+.quick-card strong {
+    display: block;
+
+    color: #26333d;
+
+    font-size: 9px;
+
+    margin-bottom: 5px;
+}
+
+.quick-card p {
+    color: #737d84;
+
+    font-size: 8px;
+}
+
+.quick-card > span {
+    color: #dc8a00;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   THIS WEEK
+========================================= */
+
+.this-week {
+    margin-top: 22px;
+}
+
+.week-heading {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 11px;
+}
+
+.week-heading h2 {
+    color: #1c2a36;
+
+    font-size: 13px;
+}
+
+.week-heading a {
+    color: #d98600;
+
+    font-size: 8px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   MEALS
+========================================= */
+
+.meals {
+    width: 100%;
+
+    padding: 9px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 8px;
+
+    background: #fffdf8;
+
+    border: 1px solid #e1d8c9;
+
+    border-radius: 14px;
+}
+
+.meal {
+    height: 72px;
+
+    padding: 11px;
+
+    border-radius: 11px;
+
+    background: #f0ecde;
+}
+
+.meal.selected {
+    background: #fff1d9;
+}
+
+.meal span {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #67727a;
+
+    font-size: 7px;
+    font-weight: 700;
+}
+
+.meal.selected span {
+    color: #d88900;
+}
+
+.meal strong {
+    display: block;
+
+    color: #27343e;
+
+    font-size: 9px;
+
+    margin-bottom: 7px;
+}
+
+.meal small {
+    color: #777f82;
+
+    font-size: 7px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+    .app {
+        width: calc(100% - 40px);
+    }
+
+    .content {
+        padding: 18px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .quick-cards {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .progress-container {
+        width: 70%;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .page-label {
+        left: 20px;
+    }
+
+    .app {
+        width: calc(100% - 20px);
+
+        margin-top: 42px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .content {
+        padding: 14px;
+    }
+
+    .greeting h1 {
+        font-size: 20px;
+    }
+
+    .delivery {
+        height: auto;
+
+        flex-direction: column;
+    }
+
+    .delivery-info {
+        min-height: 190px;
+    }
+
+    .food-image {
+        width: 100%;
+        height: 180px;
+    }
+
+    .subscription {
+        height: auto;
+    }
+
+    .progress-container {
+        width: 100%;
+    }
+
+    .subscription-footer {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .quick-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .meals {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 430px) {
+
+    .name {
+        display: none;
+    }
+
+    .greeting h1 {
+        font-size: 19px;
+    }
+
+    .delivery h2 {
+        font-size: 19px;
+    }
+
+    .meals {
+        grid-template-columns: 1fr;
+    }
+}
