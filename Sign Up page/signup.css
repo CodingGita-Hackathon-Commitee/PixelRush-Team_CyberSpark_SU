@@ -1,0 +1,517 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f8e9e9;
+
+    color: #29251f;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/* =========================================
+   MAIN PAGE
+========================================= */
+
+.page {
+    width: calc(100% - 110px);
+    width: 100vw;
+    height: 100vh;
+
+    /* max-width: 1600px;
+
+    min-height: 620px; */
+
+    margin: 10px;
+
+    background: #fffaf0;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    height: 43px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-around;
+    gap: 1300px;
+
+    padding: 0 24px;
+
+    background: #fffaf0;
+
+    border-bottom: 1px solid #eee5d8;
+}
+
+
+/* Brand */
+
+.brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #39342b;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.brand-icon {
+    width: 18px;
+    height: 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+
+    background: #dc8d00;
+
+    color: white;
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+
+/* Help */
+
+.help {
+    color: #5f594f;
+
+    font-size: 9px;
+}
+
+
+/* =========================================
+   SIGNUP AREA
+========================================= */
+
+.signup-area {
+    min-height: 575px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    padding-top: 30px;
+
+    /* border-top: 3px solid #119cff; */
+}
+
+
+/* =========================================
+   SIGNUP CARD
+========================================= */
+
+.signup-card {
+    width: 560px;
+
+    height: 340px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background: #fffdf7;
+
+    border: 1px solid #32aaff;
+
+    border-radius: 3px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   LEFT FORM
+========================================= */
+
+.signup-form {
+    background: #fffdf7;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.form-content {
+    width: 220px;
+}
+
+
+/* Small heading */
+
+.eyebrow {
+    display: block;
+
+    color: #dc8c00;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.3px;
+
+    margin-bottom: 8px;
+}
+
+
+/* Main heading */
+
+.form-content h1 {
+    color: #29251f;
+
+    font-size: 21px;
+
+    line-height: 1.05;
+
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+
+/* Description */
+
+.description {
+    color: #8b8479;
+
+    font-size: 8px;
+
+    line-height: 1.4;
+
+    margin-bottom: 14px;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.input-group {
+    margin-bottom: 8px;
+}
+
+.input-group label {
+    display: block;
+
+    color: #4f4940;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    margin-bottom: 4px;
+}
+
+.input-group input {
+    width: 100%;
+
+    height: 23px;
+
+    padding: 0 8px;
+
+    border: 1px solid #e4daca;
+
+    border-radius: 5px;
+
+    background: #fffdf8;
+
+    color: #403b33;
+
+    font-size: 8px;
+
+    outline: none;
+}
+
+.input-group input::placeholder {
+    color: #a49b8d;
+}
+
+.input-group input:focus {
+    border-color: #d89100;
+
+    box-shadow: 0 0 0 2px rgba(216, 145, 0, .08);
+}
+
+
+/* =========================================
+   TERMS
+========================================= */
+
+.terms {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    margin-top: 2px;
+
+    margin-bottom: 13px;
+
+    color: #777066;
+
+    font-size: 7px;
+
+    cursor: pointer;
+}
+
+.terms input {
+    width: 10px;
+    height: 10px;
+
+    accent-color: #dc8c00;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   CREATE BUTTON
+========================================= */
+
+.create-btn {
+    width: 100%;
+
+    height: 23px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #d98300;
+
+    color: white;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .2s ease;
+}
+
+.create-btn:hover {
+    background: #c87800;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   LOGIN
+========================================= */
+
+.login-text {
+    text-align: center;
+
+    color: #777066;
+
+    font-size: 7px;
+
+    margin-top: 15px;
+}
+
+.login-text a {
+    color: #4e4941;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   FOOD IMAGE
+========================================= */
+
+.food-section {
+    position: relative;
+
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.food-section img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   IMAGE OVERLAY
+========================================= */
+
+.image-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.02) 45%,
+        rgba(0, 0, 0, 0.72) 100%
+    );
+}
+
+
+/* =========================================
+   IMAGE CAPTION
+========================================= */
+
+.image-caption {
+    position: absolute;
+
+    left: 15px;
+    bottom: 13px;
+
+    color: white;
+}
+
+.image-caption h2 {
+    font-size: 11px;
+
+    font-weight: 500;
+
+    margin-bottom: 3px;
+}
+
+.image-caption p {
+    font-size: 6px;
+
+    opacity: .8;
+}
+#name:hover{
+    border: 2px solid teal;
+}
+#email:hover{
+    border: 2px solid teal;
+}
+#password:hover{
+    border: 2px solid teal;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .page-title {
+        left: 25px;
+    }
+
+    .page {
+        width: calc(100% - 40px);
+    }
+
+    .signup-card {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .page-title {
+        top: 25px;
+        left: 20px;
+
+        font-size: 12px;
+    }
+
+    .page {
+        width: calc(100% - 20px);
+
+        margin-top: 50px;
+    }
+
+    .signup-area {
+        padding: 25px 15px;
+
+        min-height: auto;
+    }
+
+    .signup-card {
+        width: 100%;
+
+        height: auto;
+
+        grid-template-columns: 1fr;
+    }
+
+    .signup-form {
+        padding: 30px 15px;
+    }
+
+    .form-content {
+        width: 100%;
+
+        max-width: 280px;
+    }
+
+    .food-section {
+        height: 260px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .header {
+        padding: 0 15px;
+    }
+
+    .signup-card {
+        width: 100%;
+    }
+
+    .form-content h1 {
+        font-size: 19px;
+    }
+}
