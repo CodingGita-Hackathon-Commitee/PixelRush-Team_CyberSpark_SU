@@ -1,0 +1,976 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f8e9e9;
+
+    color: #172033;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================
+   WEBSITE
+========================================= */
+
+.website {
+    background: #fffaf0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    height: 40px;
+
+    padding: 0 20px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e8e6e1;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* Logo */
+
+.logo {
+    width: 63px;
+
+    font-size: 12px;
+
+    font-weight: 900;
+
+    font-style: italic;
+
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: #df1e26;
+}
+
+.logo b {
+    color: #eaa000;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+}
+
+nav a {
+    color: #374151;
+
+    font-size: 8px;
+
+    font-weight: 500;
+}
+
+
+/* Nav Right */
+
+.nav-right {
+    margin-left: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.nav-icon {
+    color: #566170;
+
+    font-size: 14px;
+}
+
+.bell {
+    font-size: 13px;
+}
+
+.profile {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    font-size: 8px;
+
+    color: #374151;
+}
+
+.avatar {
+    width: 19px;
+    height: 19px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e39b00;
+
+    color: #111827;
+
+    font-size: 8px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.content {
+    padding: 18px 20px 22px;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.heading-row {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    margin-bottom: 13px;
+}
+
+.title-row {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+.title-row h1 {
+    font-size: 18px;
+
+    line-height: 1;
+
+    color: #111827;
+}
+
+.active-badge {
+    padding: 3px 6px;
+
+    background: #dff5e7;
+
+    color: #29a364;
+
+    border-radius: 8px;
+
+    font-size: 7px;
+
+    font-weight: 600;
+}
+
+.subtitle {
+    margin-top: 5px;
+
+    color: #7b8490;
+
+    font-size: 8px;
+}
+
+.plan-badge {
+    padding: 5px 8px;
+
+    border: 1px solid #e2e5e9;
+
+    border-radius: 6px;
+
+    background: white;
+
+    color: #7a8390;
+
+    font-size: 7px;
+}
+
+.plan-badge strong {
+    color: #263244;
+}
+
+
+/* =========================================
+   STATS
+========================================= */
+
+.stats {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 9px;
+
+    margin-bottom: 12px;
+}
+
+.stat-card {
+    min-height: 66px;
+
+    position: relative;
+
+    padding: 10px 12px;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe5eb;
+
+    border-radius: 9px;
+
+    box-shadow:
+        0 1px 2px rgba(0,0,0,.02);
+}
+
+.stat-icon {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    color: #e9a000;
+
+    font-size: 11px;
+}
+
+.stat-label {
+    display: block;
+
+    color: #748091;
+
+    font-size: 7px;
+
+    margin-bottom: 5px;
+}
+
+.stat-number {
+    display: block;
+
+    font-size: 17px;
+
+    line-height: 1;
+
+    color: #273446;
+
+    margin-bottom: 3px;
+}
+
+.stat-card small {
+    color: #8a929d;
+
+    font-size: 6.5px;
+}
+
+.delivery-title {
+    display: block;
+
+    font-size: 11px;
+
+    color: #2d394b;
+
+    margin-top: 3px;
+
+    margin-bottom: 4px;
+}
+
+
+/* =========================================
+   MANAGE PLAN
+========================================= */
+
+.manage-plan {
+    height: 34px;
+
+    padding: 6px 10px;
+
+    margin-bottom: 13px;
+
+    background: #fff1d3;
+
+    border: 1px solid #f0dfb9;
+
+    border-radius: 9px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.manage-plan strong {
+    display: block;
+
+    color: #4b3b20;
+
+    font-size: 8px;
+}
+
+.manage-plan p {
+    color: #80745e;
+
+    font-size: 6px;
+
+    margin-top: 1px;
+}
+
+.toggle-buttons {
+    display: flex;
+
+    gap: 5px;
+}
+
+.toggle-buttons span {
+    width: 20px;
+    height: 10px;
+
+    border-radius: 8px;
+
+    background: white;
+
+    border: 1px solid #dfe3e7;
+}
+
+.toggle-buttons span.selected {
+    background: #e7a000;
+
+    border-color: #e7a000;
+}
+
+
+/* =========================================
+   MAIN GRID
+========================================= */
+
+.main-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================
+   COMMON CARD
+========================================= */
+
+.calendar-card,
+.selected-card {
+    background: white;
+
+    border: 1px solid #dfe5eb;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 1px 2px rgba(0,0,0,.02);
+}
+
+
+/* =========================================
+   CALENDAR
+========================================= */
+
+.calendar-card {
+    padding: 12px 13px;
+}
+
+.card-label {
+    color: #788492;
+
+    font-size: 7px;
+
+    margin-bottom: 2px;
+}
+
+.calendar-card h2,
+.selected-card h2 {
+    color: #293547;
+
+    font-size: 13px;
+
+    line-height: 1.1;
+}
+
+.calendar-icon {
+    color: #526171;
+
+    font-size: 10px;
+
+    margin-top: 5px;
+}
+
+
+/* Weekdays */
+
+.weekdays {
+    display: grid;
+
+    grid-template-columns: repeat(7, 1fr);
+
+    gap: 4px;
+
+    margin-top: 7px;
+
+    margin-bottom: 4px;
+
+    text-align: center;
+}
+
+.weekdays span {
+    color: #677486;
+
+    font-size: 6px;
+
+    font-weight: 600;
+}
+
+
+/* Calendar Grid */
+
+.calendar {
+    display: grid;
+
+    grid-template-columns: repeat(7, 1fr);
+
+    gap: 4px;
+}
+
+.date {
+    height: 30px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    color: #687484;
+
+    font-size: 7px;
+}
+
+.date i {
+    width: 4px;
+    height: 4px;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    bottom: 3px;
+}
+
+.selected-date {
+    border: 2px solid #e8a000;
+
+    color: #4a5564;
+
+    font-weight: 700;
+}
+
+.selected-date i {
+    background: #e8a000;
+}
+
+.upcoming i {
+    background: #287c4d;
+}
+
+.skipped i {
+    background: #506a7d;
+}
+
+
+/* Legend */
+
+.calendar-legend {
+    border-top: 1px solid #e8eaed;
+
+    margin-top: 10px;
+
+    padding-top: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.calendar-legend span {
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+
+    color: #76808c;
+
+    font-size: 6px;
+}
+
+.calendar-legend i {
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+}
+
+.green-dot {
+    background: #26794a;
+}
+
+.blue-dot {
+    background: #506a7d;
+}
+
+.orange-dot {
+    background: #e8a000;
+}
+
+
+/* =========================================
+   SELECTED DAY
+========================================= */
+
+.selected-card {
+    padding: 12px;
+}
+
+.selected-card h2 {
+    font-size: 13px;
+
+    margin-bottom: 10px;
+}
+
+.meal-image {
+    width: 100%;
+
+    height: 95px;
+
+    overflow: hidden;
+
+    border-radius: 9px;
+
+    margin-bottom: 8px;
+}
+
+.meal-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.selected-card h3 {
+    color: #344052;
+
+    font-size: 10px;
+
+    margin-bottom: 4px;
+}
+
+.meal-type {
+    color: #7d8792;
+
+    font-size: 7px;
+
+    margin-bottom: 5px;
+}
+
+.meal-description {
+    color: #818b96;
+
+    font-size: 7px;
+
+    margin-bottom: 12px;
+}
+
+
+/* Meal Buttons */
+
+.meal-buttons {
+    display: flex;
+
+    gap: 8px;
+}
+
+.meal-buttons button {
+    height: 19px;
+
+    border-radius: 5px;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.skip {
+    width: 48%;
+
+    background: white;
+
+    border: 1px solid #e1e4e7;
+
+    color: #596576;
+}
+
+.change {
+    width: 52%;
+
+    border: 1px solid #e0a000;
+
+    background: #e7a000;
+
+    color: #27200d;
+}
+
+
+/* =========================================
+   CONTACT GRID
+========================================= */
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    margin-bottom: 33px;
+}
+
+.contact-card {
+    width: 600px;
+
+    min-height: 93px;
+
+    padding: 12px;
+
+    background: white;
+
+    border: 1px solid #dfe5eb;
+
+    border-radius: 9px;
+}
+
+.contact-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    width: 23px;
+    height: 23px;
+
+    border-radius: 6px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #fff1cf;
+
+    color: #e5a000;
+
+    font-size: 11px;
+}
+
+.contact-heading h3 {
+    color: #344052;
+
+    font-size: 9px;
+}
+
+.contact-card > strong {
+    color: #394556;
+
+    font-size: 7px;
+}
+
+.contact-card p {
+    color: #7b8590;
+
+    font-size: 6.5px;
+
+    line-height: 1.55;
+
+    margin-top: 3px;
+}
+
+.contact-card a {
+    display: inline-block;
+
+    margin-top: 5px;
+
+    color: #e19b00;
+
+    font-size: 6.5px;
+
+    font-weight: 600;
+}
+
+.phone {
+    margin-top: 6px !important;
+}
+
+
+/* =========================================
+   PAYMENT
+========================================= */
+
+.payment-card {
+    background: white;
+
+    border: 1px solid #dfe5eb;
+
+    border-radius: 9px;
+
+    padding: 12px;
+}
+
+.payment-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    margin-bottom: 8px;
+}
+
+.payment-heading h3 {
+    color: #344052;
+
+    font-size: 9px;
+}
+
+.payment-heading p {
+    color: #7d8792;
+
+    font-size: 6.5px;
+
+    margin-top: 3px;
+}
+
+.payment-heading > span {
+    color: #667383;
+
+    font-size: 12px;
+}
+
+
+/* Table */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+}
+
+thead {
+    border-bottom: 1px solid #dfe5eb;
+}
+
+th {
+    color: #76808d;
+
+    font-size: 5.5px;
+
+    font-weight: 600;
+
+    padding: 5px 4px;
+
+    text-align: center;
+}
+
+td {
+    height: 26px;
+
+    border-bottom: 1px solid #e5e8eb;
+
+    color: #465365;
+
+    font-size: 6.5px;
+
+    text-align: center;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.paid {
+    display: inline-block;
+
+    padding: 3px 7px;
+
+    border-radius: 8px;
+
+    background: #dcf7e5;
+
+    color: #28a261;
+
+    font-size: 5.5px;
+
+    font-weight: 600;
+}
+
+td a {
+    color: #e29c00;
+
+    font-size: 6px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .page-label {
+        left: 20px;
+    }
+
+    .website {
+        width: calc(100% - 30px);
+
+        margin-top: 65px;
+    }
+
+    .content {
+        padding: 16px;
+    }
+
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        gap: 20px;
+    }
+
+    .contact-card {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .page-label {
+        top: 20px;
+        left: 15px;
+
+        font-size: 11px;
+    }
+
+    .website {
+        width: calc(100% - 20px);
+
+        margin-top: 48px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .heading-row {
+        gap: 10px;
+    }
+
+    .plan-badge {
+        display: none;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .calendar {
+        gap: 3px;
+    }
+
+    .date {
+        height: 34px;
+    }
+
+    .payment-card {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 500px;
+    }
+}
