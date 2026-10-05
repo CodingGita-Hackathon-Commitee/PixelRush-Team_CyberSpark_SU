@@ -1,0 +1,506 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+    background: #f8e8e8;
+
+    color: #172033;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================================
+   WEBSITE CONTAINER
+========================================= */
+
+.website {
+    width: 100vw;
+    height: 100vw;
+    background: #fffaf0;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    height: 47px;
+    padding: 0 19px;
+    background: #ffffff;
+    border-bottom: 1px solid #eee9dc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+    width: 60px;
+
+    font-size: 12px;
+
+    font-weight: 900;
+
+    font-style: italic;
+
+    letter-spacing: -1px;
+}
+
+.logo-red {
+    color: #df2027;
+}
+
+.logo-yellow {
+    color: #f0a000;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 23px;
+
+    margin-right: auto;
+
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #344052;
+
+    font-size: 9px;
+
+    font-weight: 500;
+
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: #df9500;
+}
+
+
+/* =========================================
+   RIGHT NAV
+========================================= */
+
+.nav-right {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.icon {
+    color: #536070;
+
+    font-size: 17px;
+
+    line-height: 1;
+}
+
+.search-icon {
+    transform: rotate(-20deg);
+}
+
+.bell-icon {
+    font-size: 15px;
+}
+
+
+/* =========================================
+   PROFILE
+========================================= */
+
+.profile {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #4b5563;
+
+    font-size: 9px;
+}
+
+.avatar {
+    width: 21px;
+    height: 21px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #e39a00;
+
+    color: #172033;
+
+    font-size: 9px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   CONFIRMATION AREA
+========================================= */
+
+.confirmation {
+    min-height: 483px;
+
+    padding-top: 28px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+/* =========================================
+   SUCCESS ICON
+========================================= */
+
+.success-icon {
+    width: 47px;
+    height: 47px;
+
+    border-radius: 50%;
+
+    background: #dff1dc;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 10px;
+}
+
+.success-icon span {
+    color: #28a467;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   MAIN HEADING
+========================================= */
+
+.confirmation h1 {
+    color: #101827;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    letter-spacing: -0.7px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   CONFIRMATION TEXT
+========================================= */
+
+.confirmation-text {
+    color: #737b86;
+
+    font-size: 11px;
+
+    margin-bottom: 14px;
+}
+
+.confirmation-code {
+    color: #858b94;
+
+    font-size: 8px;
+
+    margin-bottom: 23px;
+}
+
+.confirmation-code strong {
+    font-weight: 500;
+
+    color: #717780;
+}
+
+
+/* =========================================
+   DETAILS
+========================================= */
+
+.details {
+    width: 450px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+}
+
+
+/* =========================================
+   INFO CARD
+========================================= */
+
+.info-card {
+    min-height: 191px;
+
+    background: #ffffff;
+
+    border: 1px solid #dce3ea;
+
+    border-radius: 11px;
+
+    padding: 14px;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.info-card h2 {
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #344054;
+
+    margin-bottom: 7px;
+}
+
+
+/* =========================================
+   INFO ROW
+========================================= */
+
+.info-row {
+    min-height: 31px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 8px;
+
+    border-top: 1px solid #e5e9ed;
+}
+
+.info-row:first-of-type {
+    border-top: none;
+}
+
+.info-row span {
+    color: #718096;
+
+    font-size: 8px;
+
+    line-height: 1.35;
+}
+
+.info-row strong {
+    color: #394554;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    text-align: right;
+
+    line-height: 1.35;
+}
+
+
+/* =========================================
+   REMAINING MEALS
+========================================= */
+
+.info-row.remaining strong {
+    color: #31a36b;
+}
+
+
+/* =========================================
+   SUBSCRIPTION BUTTON
+========================================= */
+
+.subscription-button {
+    margin-top: 22px;
+
+    min-width: 112px;
+
+    padding: 8px 13px;
+
+    background: #eba000;
+
+    color: #171717;
+
+    border-radius: 6px;
+
+    text-align: center;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.08);
+
+    transition: 0.2s;
+}
+
+.subscription-button:hover {
+    background: #d99100;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   WEEKLY MENU LINK
+========================================= */
+
+.weekly-link {
+    margin-top: 10px;
+
+    color: #e59a00;
+
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+.weekly-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .page-label {
+        top: 18px;
+        left: 15px;
+
+        font-size: 11px;
+    }
+
+    .website {
+        width: calc(100% - 20px);
+
+        margin-top: 45px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        padding: 0 13px;
+    }
+
+    .details {
+        width: calc(100% - 30px);
+
+        grid-template-columns: 1fr;
+    }
+
+    .info-card {
+        min-height: auto;
+    }
+
+    .confirmation {
+        padding-top: 25px;
+
+        padding-bottom: 35px;
+    }
+
+    .confirmation h1 {
+        font-size: 19px;
+    }
+
+    .confirmation-text {
+        font-size: 10px;
+    }
+
+    .confirmation-code {
+        margin-bottom: 18px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+
+    .nav-right {
+        gap: 7px;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .profile span:last-child {
+        display: none;
+    }
+
+    .details {
+        width: calc(100% - 24px);
+    }
+
+    .info-card {
+        padding: 12px;
+    }
+}
