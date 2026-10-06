@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TiffinBox - Payment History</title>
+
+    <link rel="stylesheet" href="payment-history.css">
+</head>
+
+<body>
+    <!-- PAGE -->
+    <div class="page">
+
+        <!-- ================= NAVBAR ================= -->
+
+        <header class="navbar">
+
+            <div class="logo">
+                <span>TI</span>FFIN
+            </div>
+
+            <nav class="navigation">
+                <a href="#">Home</a>
+                <a href="#">Weekly menu</a>
+                <a href="#">Plans</a>
+                <a href="#">My subscription</a>
+            </nav>
+
+            <div class="nav-right">
+
+                <span class="search">⌕</span>
+
+                <span class="notification">♧</span>
+
+                <div class="avatar">A</div>
+
+                <span class="username">Aarav</span>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= MAIN ================= -->
+
+        <main class="content">
+
+
+            <!-- HEADER -->
+
+            <section class="page-header">
+
+                <div>
+                    <div class="eyebrow">
+                        ACCOUNT
+                    </div>
+
+                    <h1>Payment history</h1>
+
+                    <p>
+                        View your previous subscription payments and invoices.
+                    </p>
+                </div>
+
+                <button class="download-all">
+                    ↓ Download all
+                </button>
+
+            </section>
+
+
+            <!-- ================= SUMMARY ================= -->
+
+            <section class="summary-grid">
+
+                <div class="summary-card">
+
+                    <div class="summary-icon">₹</div>
+
+                    <div>
+                        <span>Total paid</span>
+                        <strong>₹8,897</strong>
+                        <small>All payments</small>
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon green">✓</div>
+
+                    <div>
+                        <span>Successful payments</span>
+                        <strong>3</strong>
+                        <small>Payments completed</small>
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon orange">▣</div>
+
+                    <div>
+                        <span>Current plan</span>
+                        <strong>Premium</strong>
+                        <small>₹4,299 / 30 days</small>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= FILTER BAR ================= -->
+
+            <section class="filter-card">
+
+                <div class="filter-left">
+
+                    <label>Payment history</label>
+
+                    <span>
+                        Your recent subscription payments
+                    </span>
+
+                </div>
+
+
+                <div class="filters">
+
+                    <select>
+                        <option>All payments</option>
+                        <option>Successful</option>
+                        <option>Pending</option>
+                        <option>Failed</option>
+                    </select>
+
+                    <select>
+                        <option>2026</option>
+                        <option>2025</option>
+                    </select>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= PAYMENT TABLE ================= -->
+
+            <section class="history-card">
+
+                <div class="table-header">
+
+                    <h2>Recent payments</h2>
+
+                    <span>3 payments</span>
+
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>PAYMENT DATE</th>
+                                <th>DESCRIPTION</th>
+                                <th>PLAN</th>
+                                <th>PAYMENT METHOD</th>
+                                <th>AMOUNT</th>
+                                <th>STATUS</th>
+                                <th>INVOICE</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <!-- ROW 1 -->
+
+                            <tr>
+
+                                <td>
+                                    <strong>14 Oct 2026</strong>
+                                    <small>10:32 AM</small>
+                                </td>
+
+                                <td>
+                                    <strong>Subscription renewal</strong>
+                                    <small>30 day meal subscription</small>
+                                </td>
+
+                                <td>
+                                    <span class="plan-badge">
+                                        Premium
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <div class="payment-method">
+                                        <span class="upi-icon">U</span>
+                                        UPI
+                                    </div>
+                                </td>
+
+                                <td class="amount">
+                                    ₹4,299
+                                </td>
+
+                                <td>
+                                    <span class="status paid">
+                                        ● Paid
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="invoice">
+                                        View invoice
+                                    </button>
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ROW 2 -->
+
+                            <tr>
+
+                                <td>
+                                    <strong>15 Sep 2026</strong>
+                                    <small>11:18 AM</small>
+                                </td>
+
+                                <td>
+                                    <strong>Subscription renewal</strong>
+                                    <small>30 day meal subscription</small>
+                                </td>
+
+                                <td>
+                                    <span class="plan-badge standard">
+                                        Standard
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <div class="payment-method">
+                                        <span class="upi-icon">U</span>
+                                        UPI
+                                    </div>
+                                </td>
+
+                                <td class="amount">
+                                    ₹2,599
+                                </td>
+
+                                <td>
+                                    <span class="status paid">
+                                        ● Paid
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="invoice">
+                                        View invoice
+                                    </button>
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ROW 3 -->
+
+                            <tr>
+
+                                <td>
+                                    <strong>15 Aug 2026</strong>
+                                    <small>09:45 AM</small>
+                                </td>
+
+                                <td>
+                                    <strong>Subscription payment</strong>
+                                    <small>30 day meal subscription</small>
+                                </td>
+
+                                <td>
+                                    <span class="plan-badge basic">
+                                        Basic
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <div class="payment-method">
+                                        <span class="card-icon">▣</span>
+                                        Card
+                                    </div>
+                                </td>
+
+                                <td class="amount">
+                                    ₹1,999
+                                </td>
+
+                                <td>
+                                    <span class="status paid">
+                                        ● Paid
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="invoice">
+                                        View invoice
+                                    </button>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= PAYMENT INFO ================= -->
+
+            <section class="bottom-grid">
+
+
+                <!-- PAYMENT METHOD -->
+
+                <div class="info-card">
+
+                    <div class="info-heading">
+
+                        <div class="info-icon">
+                            ◉
+                        </div>
+
+                        <div>
+                            <h3>Default payment method</h3>
+                            <p>Your preferred payment method</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="saved-payment">
+
+                        <div class="card-symbol">
+                            UPI
+                        </div>
+
+                        <div>
+
+                            <strong>aarav@okaxis</strong>
+
+                            <span>
+                                Primary payment method
+                            </span>
+
+                        </div>
+
+                        <span class="default-badge">
+                            Default
+                        </span>
+
+                    </div>
+
+
+                    <button class="outline-btn">
+                        Manage payment method
+                    </button>
+
+                </div>
+
+
+                <!-- BILLING INFO -->
+
+                <div class="info-card">
+
+                    <div class="info-heading">
+
+                        <div class="info-icon">
+                            ₹
+                        </div>
+
+                        <div>
+                            <h3>Billing information</h3>
+                            <p>Details used on your invoices</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="billing-info">
+
+                        <div>
+                            <span>Name</span>
+                            <strong>Aarav Mehta</strong>
+                        </div>
+
+                        <div>
+                            <span>Email</span>
+                            <strong>aarav@example.com</strong>
+                        </div>
+
+                    </div>
+
+
+                    <button class="outline-btn">
+                        Edit billing details
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= HELP ================= -->
+
+            <div class="help-bar">
+
+                <span>◉</span>
+
+                Need help? Homely Bites Kitchen · +91 98765 43210
+
+            </div>
+
+
+        </main>
+
+    </div>
+
+</body>
+</html>
