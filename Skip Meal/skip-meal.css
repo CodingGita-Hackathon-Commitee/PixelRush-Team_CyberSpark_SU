@@ -1,0 +1,619 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #fae9e9;
+
+    color: #253640;
+}
+
+
+/* =========================================
+   PAGE
+========================================= */
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    background: #fffaf0;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    height: 51px;
+
+    padding: 0 21px;
+
+    display: flex;
+    align-items: center;
+
+    background: #fffefa;
+
+    border-bottom: 1px solid #e4ddd2;
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 75px;
+
+    color: #e3252c;
+
+    font-size: 14px;
+
+    font-weight: 900;
+
+    font-style: italic;
+}
+
+.logo span {
+    color: #d9272e;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+
+    gap: 27px;
+}
+
+nav a {
+    text-decoration: none;
+
+    color: #34434c;
+
+    font-size: 8px;
+}
+
+nav a:hover {
+    color: #d88800;
+}
+
+
+/* RIGHT SIDE */
+
+.nav-right {
+    margin-left: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+.search {
+    color: #4b5962;
+
+    font-size: 18px;
+}
+
+.bell {
+    color: #4b5962;
+
+    font-size: 14px;
+}
+
+.avatar {
+    width: 23px;
+    height: 23px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #dc8b00;
+
+    color: #1c2930;
+
+    font-size: 9px;
+
+    font-weight: bold;
+}
+
+.username {
+    font-size: 8px;
+
+    color: #394750;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+.main {
+    min-height: 605px;
+
+    padding: 45px 20px 35px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* =========================================
+   SKIP CARD
+========================================= */
+
+.skip-card {
+    width: 480px;
+
+    padding: 25px 27px;
+
+    text-align: center;
+
+    background: #fffefa;
+
+    border: 1px solid #e1d9ce;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 2px 4px rgba(35, 28, 20, 0.05);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.skip-icon {
+    width: 43px;
+    height: 43px;
+
+    margin: 0 auto 13px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #fff0d2;
+
+    color: #d98700;
+
+    font-size: 21px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.eyebrow {
+    margin-bottom: 7px;
+
+    color: #d68600;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+h1 {
+    margin-bottom: 7px;
+
+    color: #243640;
+
+    font-size: 21px;
+
+    font-weight: 700;
+}
+
+.description {
+    max-width: 350px;
+
+    margin: 0 auto 19px;
+
+    color: #778187;
+
+    font-size: 8px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   MEAL CARD
+========================================= */
+
+.meal-card {
+    display: flex;
+
+    text-align: left;
+
+    overflow: hidden;
+
+    background: #fffaf0;
+
+    border: 1px solid #e3dacf;
+
+    border-radius: 10px;
+}
+
+
+/* IMAGE */
+
+.meal-image {
+    width: 145px;
+
+    min-height: 115px;
+
+    flex-shrink: 0;
+}
+
+.meal-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* MEAL INFO */
+
+.meal-info {
+    padding: 14px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.meal-label {
+    margin-bottom: 5px;
+
+    color: #d88700;
+
+    font-size: 6px;
+
+    font-weight: 700;
+
+    letter-spacing: .7px;
+}
+
+.meal-info h2 {
+    margin-bottom: 5px;
+
+    color: #34444d;
+
+    font-size: 10px;
+}
+
+.meal-info p {
+    margin-bottom: 8px;
+
+    color: #7b858a;
+
+    font-size: 7px;
+}
+
+.delivery-time {
+    color: #526069;
+
+    font-size: 7px;
+}
+
+
+/* =========================================
+   NOTICE
+========================================= */
+
+.notice {
+    margin-top: 13px;
+
+    padding: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    text-align: left;
+
+    border-radius: 8px;
+
+    background: #fff1d5;
+}
+
+.notice-icon {
+    width: 23px;
+    height: 23px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f5c873;
+
+    color: #795000;
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+.notice strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #5d4a2c;
+
+    font-size: 7px;
+}
+
+.notice p {
+    color: #7e705b;
+
+    font-size: 6px;
+}
+
+
+/* =========================================
+   SUMMARY
+========================================= */
+
+.summary {
+    margin-top: 13px;
+
+    padding: 11px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 27px;
+
+    border: 1px solid #e5ddd2;
+
+    border-radius: 8px;
+
+    background: #fffefa;
+}
+
+.summary div:not(.arrow) {
+    text-align: center;
+}
+
+.summary span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #808a8f;
+
+    font-size: 6px;
+}
+
+.summary strong {
+    color: #34444d;
+
+    font-size: 9px;
+}
+
+.summary .arrow {
+    color: #d88800;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.actions {
+    margin-top: 17px;
+
+    display: flex;
+
+    gap: 9px;
+}
+
+.actions button {
+    height: 32px;
+
+    border-radius: 7px;
+
+    font-size: 7px;
+
+    font-weight: 600;
+}
+
+.cancel {
+    flex: 1;
+
+    border: 1px solid #ddd4c7;
+
+    background: #fffefa;
+
+    color: #49565e;
+}
+
+.cancel:hover {
+    border-color: #d88a00;
+
+    color: #d88a00;
+}
+
+.skip {
+    flex: 1;
+
+    border: 1px solid #d68a00;
+
+    background: #df9000;
+
+    color: #fff;
+}
+
+.skip span {
+    margin-left: 7px;
+}
+
+.skip:hover {
+    background: #c97e00;
+}
+
+
+/* =========================================
+   BACK LINK
+========================================= */
+
+.back {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: #d48600;
+
+    text-decoration: none;
+
+    font-size: 7px;
+}
+
+.back:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   HELP
+========================================= */
+
+.help {
+    height: 29px;
+
+    margin: 0 20px 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background: #f1e3f3;
+
+    color: #656e74;
+
+    font-size: 7px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 700px) {
+
+    .page {
+        width: calc(100% - 30px);
+    }
+
+    .skip-card {
+        width: 100%;
+
+        max-width: 480px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 520px) {
+
+    .page-label {
+        left: 15px;
+    }
+
+    .page {
+        width: calc(100% - 20px);
+
+        margin-top: 50px;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .main {
+        padding: 25px 12px;
+    }
+
+    .skip-card {
+        padding: 20px 15px;
+    }
+
+    .meal-card {
+        flex-direction: column;
+    }
+
+    .meal-image {
+        width: 100%;
+        height: 150px;
+    }
+
+    .summary {
+        gap: 15px;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .actions button {
+        width: 100%;
+    }
+
+}
