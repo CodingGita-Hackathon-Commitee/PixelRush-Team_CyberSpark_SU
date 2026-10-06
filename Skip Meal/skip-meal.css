@@ -301,7 +301,7 @@ h1 {
 
     color: #d88700;
 
-    font-size: 6px;
+    font-size: 15px;
 
     font-weight: 700;
 
@@ -321,7 +321,7 @@ h1 {
 
     color: #7b858a;
 
-    font-size: 7px;
+    font-size: 15px;
 }
 
 .delivery-time {
@@ -451,11 +451,12 @@ h1 {
 
     display: flex;
 
-    gap: 9px;
+    gap: 20px;
 }
 
 .actions button {
     height: 32px;
+    width: 200px;
 
     border-radius: 7px;
 

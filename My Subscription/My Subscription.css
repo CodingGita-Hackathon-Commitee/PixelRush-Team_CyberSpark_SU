@@ -33,7 +33,7 @@ a {
     background: #fffaf0;
     overflow: hidden;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
 
 
@@ -345,7 +345,7 @@ nav a {
 
     color: #4b3b20;
 
-    font-size: 8px;
+    font-size: 15px;
 }
 
 .manage-plan p {
@@ -423,7 +423,7 @@ nav a {
 .card-label {
     color: #788492;
 
-    font-size: 7px;
+    font-size: 12px;
 
     margin-bottom: 2px;
 }
@@ -465,7 +465,7 @@ nav a {
 .weekdays span {
     color: #677486;
 
-    font-size: 6px;
+    font-size: 15px;
 
     font-weight: 600;
 }
@@ -500,7 +500,7 @@ nav a {
 
     color: #687484;
 
-    font-size: 7px;
+    font-size: 12px;
 }
 
 .date i {
@@ -651,6 +651,7 @@ nav a {
 
 .meal-buttons button {
     height: 19px;
+    width: 200px;
 
     border-radius: 5px;
 

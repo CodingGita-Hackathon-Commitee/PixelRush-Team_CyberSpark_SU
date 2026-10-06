@@ -169,7 +169,7 @@ nav a:hover {
 .heading p {
     color: #7b8592;
 
-    font-size: 6.5px;
+    font-size: 10.5px;
 }
 
 .recommended {
@@ -252,7 +252,7 @@ nav a:hover {
 
     border-radius: 3px;
 
-    font-size: 5px;
+    font-size: 10px;
 
     font-weight: 700;
 }
@@ -297,7 +297,7 @@ nav a:hover {
 .price {
     color: #263548;
 
-    font-size: 12px;
+    font-size: 22px;
 
     font-weight: 700;
 
@@ -316,7 +316,7 @@ nav a:hover {
 
     color: #788492;
 
-    font-size: 5.5px;
+    font-size: 15.5px;
 
     padding-bottom: 5px;
 
@@ -326,7 +326,7 @@ nav a:hover {
 .meal-count strong {
     color: #3c4757;
 
-    font-size: 5.5px;
+    font-size: 10.5px;
 }
 
 
@@ -343,7 +343,7 @@ nav a:hover {
 
     border-bottom: 1px solid #e7eaed;
 
-    font-size: 5.5px;
+    font-size: 12.5px;
 }
 
 .duration span {
@@ -370,7 +370,7 @@ nav a:hover {
 .features li {
     color: #718091;
 
-    font-size: 5.5px;
+    font-size: 12.5px;
 
     margin-bottom: 4px;
 
@@ -401,7 +401,7 @@ nav a:hover {
 .plan-card h3 {
     color: #465365;
 
-    font-size: 5.5px;
+    font-size:15.5px;
 
     margin: 6px 0 5px;
 }
@@ -439,7 +439,7 @@ nav a:hover {
 .meal-list span {
     color: #4d5968;
 
-    font-size: 5.5px;
+    font-size: 12.5px;
 }
 
 
