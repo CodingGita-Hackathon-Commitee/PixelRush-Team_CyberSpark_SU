@@ -1,3 +1,4 @@
+
 /* =========================================
    RESET
 ========================================= */
@@ -33,12 +34,36 @@ a {
 
 
 /* =========================================
+   PAGE TITLE
+========================================= */
+
+.page-title {
+    position: absolute;
+
+    top: 54px;
+    left: 48px;
+
+    color: #aaa2a2;
+
+    font-size: 14px;
+
+    font-weight: 400;
+}
+
+
+/* =========================================
    MAIN PAGE
 ========================================= */
 
 .page {
-    width:100vw;
-    height: 100vh;
+    width: calc(100% - 96px);
+
+    max-width: 1100px;
+
+    min-height: 686px;
+
+    margin: 78px auto 0;
+
     background: #fffaf0;
 
     overflow: hidden;
@@ -492,6 +517,53 @@ a {
 
 .toggle input:checked + .slider::before {
     transform: translateX(11px);
+}
+
+
+/* =========================================
+   LOGOUT BUTTON
+========================================= */
+
+.logout-section {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 25px;
+
+    padding-bottom: 25px;
+}
+
+.logout-btn {
+    height: 36px;
+
+    padding: 0 28px;
+
+    border: 1px solid #d8cfc0;
+
+    border-radius: 8px;
+
+    background: #fffdf7;
+
+    color: #c0392b;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.logout-btn:hover {
+    background: #c0392b;
+
+    color: white;
+
+    border-color: #c0392b;
 }
 
 
