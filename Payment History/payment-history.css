@@ -1,0 +1,982 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #fae9e9;
+
+    color: #263640;
+}
+
+button,
+select {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+
+/* =====================================================
+   MAIN PAGE
+===================================================== */
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    background: #fffaf0;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    height: 51px;
+
+    padding: 0 21px;
+
+    display: flex;
+    align-items: center;
+
+    background: #fffefa;
+
+    border-bottom: 1px solid #e3ddd2;
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 73px;
+
+    color: #e3232a;
+
+    font-size: 14px;
+
+    font-weight: 900;
+
+    font-style: italic;
+
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: #d9252b;
+}
+
+
+/* NAVIGATION */
+
+.navigation {
+    display: flex;
+
+    align-items: center;
+
+    gap: 26px;
+}
+
+.navigation a {
+    color: #35434c;
+
+    text-decoration: none;
+
+    font-size: 8px;
+}
+
+.navigation a:hover {
+    color: #dd8900;
+}
+
+
+/* NAV RIGHT */
+
+.nav-right {
+    margin-left: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+.search {
+    font-size: 18px;
+
+    color: #48565f;
+}
+
+.notification {
+    font-size: 15px;
+
+    color: #4d5961;
+}
+
+.avatar {
+    width: 23px;
+    height: 23px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #dc8b00;
+
+    color: #18262e;
+
+    font-size: 9px;
+
+    font-weight: bold;
+}
+
+.username {
+    color: #3d4a53;
+
+    font-size: 8px;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.content {
+    padding: 21px;
+}
+
+
+/* =====================================================
+   PAGE HEADER
+===================================================== */
+
+.page-header {
+    padding-bottom: 15px;
+
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #e5ddd1;
+}
+
+.eyebrow {
+    margin-bottom: 6px;
+
+    color: #d68600;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.page-header h1 {
+    margin-bottom: 5px;
+
+    color: #1e303b;
+
+    font-size: 20px;
+}
+
+.page-header p {
+    color: #707b82;
+
+    font-size: 7px;
+}
+
+
+/* DOWNLOAD */
+
+.download-all {
+    height: 29px;
+
+    padding: 0 13px;
+
+    border: 1px solid #e1d8cb;
+
+    border-radius: 7px;
+
+    background: #fffefa;
+
+    color: #49565e;
+
+    font-size: 7px;
+}
+
+.download-all:hover {
+    border-color: #d99100;
+
+    color: #d48600;
+}
+
+
+/* =====================================================
+   SUMMARY CARDS
+===================================================== */
+
+.summary-grid {
+    margin-top: 15px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+.summary-card {
+    min-height: 72px;
+
+    padding: 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    background: #fffefa;
+
+    border: 1px solid #e2dacf;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 1px 2px rgba(35, 28, 20, 0.04);
+}
+
+.summary-icon {
+    width: 33px;
+    height: 33px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #fff0d0;
+
+    color: #d98800;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.summary-icon.green {
+    background: #def1d9;
+
+    color: #43834b;
+}
+
+.summary-icon.orange {
+    background: #ffefd0;
+
+    color: #dc8a00;
+}
+
+.summary-card span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #748087;
+
+    font-size: 7px;
+}
+
+.summary-card strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #293a44;
+
+    font-size: 13px;
+}
+
+.summary-card small {
+    color: #8a9296;
+
+    font-size: 6px;
+}
+
+
+/* =====================================================
+   FILTER CARD
+===================================================== */
+
+.filter-card {
+    min-height: 60px;
+
+    margin-top: 15px;
+
+    padding: 11px 14px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    background: #fffefa;
+
+    border: 1px solid #e1d9ce;
+
+    border-radius: 12px;
+}
+
+.filter-left label {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #293943;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+.filter-left span {
+    color: #747f85;
+
+    font-size: 7px;
+}
+
+
+/* FILTERS */
+
+.filters {
+    display: flex;
+
+    gap: 8px;
+}
+
+.filters select {
+    width: 108px;
+    height: 26px;
+
+    padding: 0 8px;
+
+    border: 1px solid #ded6ca;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    background: #fffefa;
+
+    color: #46535c;
+
+    font-size: 7px;
+}
+
+
+/* =====================================================
+   HISTORY CARD
+===================================================== */
+
+.history-card {
+    margin-top: 15px;
+
+    padding: 15px;
+
+    background: #fffefa;
+
+    border: 1px solid #e0d8cc;
+
+    border-radius: 13px;
+
+    box-shadow:
+        0 1px 2px rgba(35, 28, 20, 0.04);
+}
+
+
+/* HEADER */
+
+.table-header {
+    margin-bottom: 13px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.table-header h2 {
+    color: #293a44;
+
+    font-size: 12px;
+}
+
+.table-header span {
+    padding: 4px 8px;
+
+    border-radius: 8px;
+
+    background: #f4eadb;
+
+    color: #7a6b58;
+
+    font-size: 6px;
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 720px;
+}
+
+thead {
+    background: #faf5eb;
+}
+
+th {
+    height: 31px;
+
+    padding: 0 9px;
+
+    text-align: left;
+
+    color: #77828a;
+
+    font-size: 6px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+
+    border-bottom: 1px solid #e4ddd2;
+}
+
+td {
+    height: 62px;
+
+    padding: 8px 9px;
+
+    border-bottom: 1px solid #e7dfd4;
+
+    vertical-align: middle;
+
+    color: #47545c;
+
+    font-size: 7px;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+td strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #36444d;
+
+    font-size: 7.5px;
+}
+
+td small {
+    display: block;
+
+    color: #8a9398;
+
+    font-size: 6px;
+}
+
+
+/* =====================================================
+   PLAN BADGES
+===================================================== */
+
+.plan-badge {
+    display: inline-block;
+
+    padding: 4px 8px;
+
+    border-radius: 8px;
+
+    background: #e7f3e1;
+
+    color: #4d8150;
+
+    font-size: 6px;
+
+    font-weight: 700;
+}
+
+.plan-badge.standard {
+    background: #fff0d2;
+
+    color: #bd7800;
+}
+
+.plan-badge.basic {
+    background: #edf0f0;
+
+    color: #647177;
+}
+
+
+/* =====================================================
+   PAYMENT METHOD
+===================================================== */
+
+.payment-method {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    color: #46535b;
+
+    font-size: 7px;
+}
+
+.upi-icon,
+.card-icon {
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+
+    background: #f2eadc;
+
+    color: #d88800;
+
+    font-size: 7px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   AMOUNT
+===================================================== */
+
+.amount {
+    color: #283943;
+
+    font-size: 8px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.status {
+    padding: 4px 8px;
+
+    border-radius: 9px;
+
+    font-size: 6px;
+
+    font-weight: 700;
+}
+
+.status.paid {
+    background: #ddf2d9;
+
+    color: #46814d;
+}
+
+
+/* =====================================================
+   INVOICE
+===================================================== */
+
+.invoice {
+    border: none;
+
+    background: transparent;
+
+    color: #d98700;
+
+    font-size: 7px;
+
+    font-weight: 600;
+}
+
+.invoice:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   BOTTOM CARDS
+===================================================== */
+
+.bottom-grid {
+    margin-top: 15px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 13px;
+}
+
+.info-card {
+    padding: 15px;
+
+    background: #fffefa;
+
+    border: 1px solid #e1d9ce;
+
+    border-radius: 13px;
+}
+
+
+/* HEADING */
+
+.info-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding-bottom: 13px;
+
+    border-bottom: 1px solid #e8e0d5;
+}
+
+.info-icon {
+    width: 29px;
+    height: 29px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #fff0d0;
+
+    color: #d98800;
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+.info-heading h3 {
+    margin-bottom: 3px;
+
+    color: #34434c;
+
+    font-size: 10px;
+}
+
+.info-heading p {
+    color: #7a858b;
+
+    font-size: 6px;
+}
+
+
+/* =====================================================
+   SAVED PAYMENT
+===================================================== */
+
+.saved-payment {
+    min-height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+.card-symbol {
+    width: 37px;
+    height: 25px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+
+    background: #f4eadc;
+
+    color: #d78900;
+
+    font-size: 7px;
+
+    font-weight: 700;
+}
+
+.saved-payment div:nth-child(2) {
+    flex: 1;
+}
+
+.saved-payment strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #394750;
+
+    font-size: 7.5px;
+}
+
+.saved-payment span {
+    display: block;
+
+    color: #858e93;
+
+    font-size: 6px;
+}
+
+.default-badge {
+    padding: 4px 7px;
+
+    border-radius: 8px;
+
+    background: #e0f1dc;
+
+    color: #4b814e;
+
+    font-size: 6px !important;
+}
+
+
+/* =====================================================
+   BILLING
+===================================================== */
+
+.billing-info {
+    min-height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+}
+
+.billing-info span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #808a90;
+
+    font-size: 6px;
+}
+
+.billing-info strong {
+    color: #394750;
+
+    font-size: 7.5px;
+}
+
+
+/* =====================================================
+   OUTLINE BUTTON
+===================================================== */
+
+.outline-btn {
+    width: 100%;
+    height: 27px;
+
+    border: 1px solid #dfd6c9;
+
+    border-radius: 6px;
+
+    background: #fffefa;
+
+    color: #4d5960;
+
+    font-size: 7px;
+}
+
+.outline-btn:hover {
+    border-color: #d98a00;
+
+    color: #d48700;
+}
+
+
+/* =====================================================
+   HELP BAR
+===================================================== */
+
+.help-bar {
+    height: 29px;
+
+    margin-top: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background: #f2e3f3;
+
+    color: #626b72;
+
+    font-size: 7px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .page {
+        width: calc(100% - 30px);
+    }
+
+    .summary-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .summary-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .bottom-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .page-label {
+        left: 15px;
+    }
+
+    .page {
+        width: calc(100% - 20px);
+
+        margin-top: 50px;
+    }
+
+    .content {
+        padding: 14px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .page-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-card:last-child {
+        grid-column: auto;
+    }
+
+    .filter-card {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .filters {
+        width: 100%;
+    }
+
+    .filters select {
+        flex: 1;
+
+        width: auto;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 420px) {
+
+    .username {
+        display: none;
+    }
+
+    .summary-card {
+        min-height: 65px;
+    }
+
+    .billing-info {
+        gap: 20px;
+    }
+
+}
