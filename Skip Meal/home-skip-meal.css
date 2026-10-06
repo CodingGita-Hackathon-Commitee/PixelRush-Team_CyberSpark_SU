@@ -1,0 +1,724 @@
+/* =====================================
+   RESET
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #fae9e9;
+
+    color: #24343e;
+}
+
+/* =====================================
+   PAGE
+===================================== */
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    background: #fffaf0;
+}
+
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+.navbar {
+    height: 52px;
+
+    padding: 0 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    background: #fffefa;
+
+    border-bottom: 1px solid #e3ddd3;
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 72px;
+
+    color: #e3262d;
+
+    font-size: 14px;
+
+    font-weight: 900;
+
+    font-style: italic;
+}
+
+.logo span {
+    color: #db282c;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+
+    gap: 27px;
+}
+
+nav a {
+    color: #3b4951;
+
+    text-decoration: none;
+
+    font-size: 8px;
+}
+
+nav a:hover,
+nav a.active {
+    color: #d78800;
+}
+
+
+/* RIGHT NAV */
+
+.nav-right {
+    margin-left: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+.search,
+.bell {
+    color: #43515a;
+
+    font-size: 16px;
+}
+
+.avatar {
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #dd8c00;
+
+    color: #172832;
+
+    font-size: 9px;
+
+    font-weight: bold;
+}
+
+.username {
+    color: #34434b;
+
+    font-size: 8px;
+}
+
+
+/* =====================================
+   MAIN
+===================================== */
+
+.main {
+    padding: 24px 21px 30px;
+}
+
+
+/* DATE */
+
+.date {
+    margin-bottom: 8px;
+
+    color: #d88600;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+}
+
+.main > h1 {
+    margin-bottom: 20px;
+
+    color: #172c39;
+
+    font-size: 23px;
+
+    letter-spacing: -0.7px;
+}
+
+
+/* =====================================
+   DELIVERY CARD
+===================================== */
+
+.delivery-card {
+    min-height: 190px;
+
+    display: flex;
+
+    overflow: hidden;
+
+    background: #fff8e9;
+
+    border: 1px solid #e1d7c9;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 1px 2px rgba(0,0,0,.04);
+}
+
+
+/* CONTENT */
+
+.delivery-content {
+    flex: 1;
+
+    padding: 22px;
+}
+
+.delivery-label {
+    display: inline-block;
+
+    margin-bottom: 13px;
+
+    padding: 5px 10px;
+
+    border-radius: 10px;
+
+    background: #f7e5bb;
+
+    color: #d48600;
+
+    font-size: 7px;
+
+    font-weight: 700;
+}
+
+.delivery-content h2 {
+    max-width: 500px;
+
+    margin-bottom: 9px;
+
+    color: #20343e;
+
+    font-size: 21px;
+
+    line-height: 1.25;
+}
+
+.delivery-description {
+    margin-bottom: 13px;
+
+    color: #68767c;
+
+    font-size: 9px;
+}
+
+.delivery-info {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #66747b;
+
+    font-size: 9px;
+}
+
+.clock {
+    color: #df9000;
+
+    font-size: 14px;
+}
+
+
+/* SKIPPED BADGE */
+
+.skipped-badge {
+    display: inline-block;
+
+    margin-top: 14px;
+
+    padding: 7px 11px;
+
+    border-radius: 13px;
+
+    background: #f0dfdf;
+
+    color: #8b5f5f;
+
+    font-size: 7px;
+
+    font-weight: 700;
+}
+
+
+/* IMAGE */
+
+.delivery-image {
+    width: 255px;
+
+    flex-shrink: 0;
+}
+
+.delivery-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    filter: saturate(.85);
+}
+
+
+/* =====================================
+   SUBSCRIPTION
+===================================== */
+
+.subscription-card {
+    margin-top: 20px;
+
+    padding: 17px 19px;
+
+    background: #101e2d;
+
+    color: white;
+
+    border-radius: 14px;
+}
+
+
+/* TOP */
+
+.subscription-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+}
+
+.small-text {
+    margin-bottom: 5px;
+
+    color: #a9b2b9;
+
+    font-size: 8px;
+}
+
+.subscription-top h2 {
+    color: #f8f3e8;
+
+    font-size: 13px;
+}
+
+.used {
+    padding: 5px 8px;
+
+    border-radius: 9px;
+
+    background: #354351;
+
+    color: #d4d9dd;
+
+    font-size: 7px;
+}
+
+
+/* NUMBER */
+
+.meal-number {
+    margin-top: 15px;
+
+    color: #fff7e9;
+
+    font-size: 25px;
+
+    font-weight: 700;
+}
+
+
+/* PROGRESS */
+
+.progress {
+    height: 6px;
+
+    margin-top: 8px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #3c4957;
+}
+
+.progress-fill {
+    width: 65%;
+
+    height: 100%;
+
+    border-radius: inherit;
+
+    background: #df9000;
+}
+
+
+/* BOTTOM */
+
+.subscription-bottom {
+    margin-top: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    color: #8d999f;
+
+    font-size: 8px;
+}
+
+.subscription-actions {
+    display: flex;
+
+    gap: 8px;
+}
+
+
+/* BUTTONS */
+
+.undo-btn,
+.manage-btn {
+    height: 27px;
+
+    padding: 0 12px;
+
+    border-radius: 6px;
+
+    font-size: 7px;
+
+    cursor: pointer;
+}
+
+.undo-btn {
+    border: 1px solid #87929b;
+
+    background: transparent;
+
+    color: #e8ecee;
+}
+
+.undo-btn:hover {
+    border-color: #df9000;
+
+    color: #df9000;
+}
+
+.manage-btn {
+    border: none;
+
+    background: #df9000;
+
+    color: #1d2b32;
+}
+
+.manage-btn:hover {
+    background: #ef9d00;
+}
+
+
+/* =====================================
+   QUICK ACTIONS
+===================================== */
+
+.quick-section {
+    margin-top: 21px;
+}
+
+.quick-section > h2 {
+    margin-bottom: 10px;
+
+    font-size: 13px;
+
+    color: #263741;
+}
+
+.quick-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 10px;
+}
+
+.quick-card {
+    min-height: 57px;
+
+    padding: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    text-decoration: none;
+
+    background: #fffefa;
+
+    border: 1px solid #e1d9ce;
+
+    border-radius: 10px;
+}
+
+.quick-card strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #33434c;
+
+    font-size: 8px;
+}
+
+.quick-card p {
+    color: #78848a;
+
+    font-size: 7px;
+}
+
+.quick-card > span {
+    color: #dc8b00;
+
+    font-size: 13px;
+}
+
+.quick-card:hover {
+    border-color: #dfa000;
+}
+
+
+/* =====================================
+   THIS WEEK
+===================================== */
+
+.week-section {
+    margin-top: 21px;
+}
+
+.week-heading {
+    margin-bottom: 10px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.week-heading h2 {
+    font-size: 13px;
+}
+
+.week-heading a {
+    color: #d88800;
+
+    text-decoration: none;
+
+    font-size: 7px;
+}
+
+
+/* WEEK CARD */
+
+.week-card {
+    padding: 10px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 8px;
+
+    background: #fffefa;
+
+    border: 1px solid #dfd8cd;
+
+    border-radius: 14px;
+}
+
+
+/* DAY */
+
+.day {
+    min-height: 72px;
+
+    padding: 11px;
+
+    border-radius: 12px;
+
+    background: #f0ecdc;
+}
+
+.day span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #777d7d;
+
+    font-size: 7px;
+
+    font-weight: 700;
+}
+
+.day strong {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #36454d;
+
+    font-size: 8px;
+}
+
+.day small {
+    color: #7e888c;
+
+    font-size: 6px;
+}
+
+
+/* SKIPPED DAYS */
+
+.skipped-day {
+    background: #f3e7e2;
+
+    opacity: .7;
+}
+
+.skipped-day span {
+    color: #9b7770;
+}
+
+.skipped-day strong {
+    text-decoration: line-through;
+
+    color: #766a68;
+}
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 750px) {
+
+    .page {
+        width: calc(100% - 30px);
+    }
+
+    .delivery-card {
+        flex-direction: column;
+    }
+
+    .delivery-image {
+        width: 100%;
+
+        height: 180px;
+
+        order: -1;
+    }
+
+    .quick-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .week-card {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 520px) {
+
+    .page-title {
+        left: 15px;
+    }
+
+    .page {
+        width: calc(100% - 20px);
+
+        margin-top: 45px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .main {
+        padding: 18px 13px;
+    }
+
+    .main > h1 {
+        font-size: 20px;
+    }
+
+    .delivery-content h2 {
+        font-size: 18px;
+    }
+
+    .subscription-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .subscription-actions {
+        width: 100%;
+    }
+
+    .undo-btn,
+    .manage-btn {
+        flex: 1;
+    }
+
+    .week-card {
+        grid-template-columns: 1fr;
+    }
+}
